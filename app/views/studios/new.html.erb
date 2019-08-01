@@ -1,0 +1,9 @@
+<h1>Forms</h1>
+
+<%= form_for @studio do |f| %>
+<%= f.label :Artist %>
+<%= f.collection_select :artist_id, @artists, :id, :name%>
+<%= f.label :Instrument %>
+<%= f.collection_select :instrument_id, @instruments, :id, :name%>
+<%= f.submit %>
+<% end %>
