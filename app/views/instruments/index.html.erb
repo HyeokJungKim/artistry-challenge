@@ -1,0 +1,13 @@
+<h1>All the instruments shown here</h1>
+
+<%# <%= button_to "Go back to see all the instruments", instruments_path, method: :get %>
+
+<% @instruments.each do |instrument| %>
+
+  <p>
+    Name: <%= instrument.name %>
+    <br>
+    Classification: <%= instrument.classification %>
+  </p>
+
+<% end %>
