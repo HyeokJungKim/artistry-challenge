@@ -1,0 +1,12 @@
+<h1>See all the associations between artists and instruments here</h1>
+
+<% @artistinstruments.each do |a| %>
+
+  <%# Artistinstrument id#2 incorrectly named %>
+  <p>
+    <%= a.name %>
+    <br>
+    <%= a.artist.name %> plays the <%= a.instrument.name %>
+  </p>
+
+<% end %>
