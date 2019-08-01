@@ -1,0 +1,11 @@
+<h1>Welcome to the Artists index</h1>
+
+<ul>
+<% @artists.each do |artist| %>
+<li>
+<%= link_to artist.name, artist%>
+</li>
+<%end%>
+</ul>
+
+<%= link_to 'Create a New Artist Instance', new_artist_path %>
